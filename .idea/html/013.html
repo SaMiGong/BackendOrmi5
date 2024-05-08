@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- radio버튼에서 name이 같으면 택1 -->
+    <!-- ?성별=남 -->
+    <!-- ?성별=여 -->
+<!--    <form action="">-->
+<!--        <input type="radio" name="성별" value="남">-->
+<!--        <input type="radio" name="성별" value="여">-->
+<!--        <button>제출</button>-->
+<!--    </form>-->
+
+    <!-- 문제: 빨간색, 노란색, 파란색 color 중 좋아하는 컬러 1개만 선택하게 하세요. -->
+    <form action="" method="get">
+        <label for="color">빨간색</label>
+        <input type="radio" name="색" id="red" value="빨간색">
+        <label for="color">파란색</label>
+        <input type="radio" name="색" id="yellow" value="파란색">
+        <label for="color">노란색</label>
+        <input type="radio" name="색" id="blue" value="노란색">
+        <button>선택</button>
+    </form>
+</body>
+</html>
