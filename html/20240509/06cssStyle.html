@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*h1{color:red;}*/
+        /*h2{color:red;}*/
+        /*p {color:red;}*/
+
+        /*위에 세줄을 한줄로 줄일 수 있음*/
+        /*h1,h2,p{color:red;}*/
+        /*코드를 짧게 줄이는 것을 리펙토링 이라고 부르기도 함*/
+
+        /*부모 자체에 스타일을 줘서 부모에 들어가는 모든 것에 스타일 적용*/
+        /*div{color:red;}*/
+
+        /*width, height, margin, padding, border는 기본적으로 상속받지않음*/
+        /*div에 스타일을 하는데 h1 보더를 inherit 명시했을 시 상속 받겠다*/
+        div {
+            color: red;
+            border: 5px solid pink;
+        }
+        h1 { border: inherit; }
+    </style>
+</head>
+<body>
+    <div>
+    <!--    인라인 스타일 -->
+    <!--    <h1 style="color:red;">Hello</h1>-->
+    <!--    <h2 style="color:red;">Hello</h2>-->
+    <!--    <p style="color:red;">Hello</p>-->
+    <!--    스타일 선언 후 -->
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <p>Hello</p>
+    </div>
+
+</body>
+</html>

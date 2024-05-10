@@ -33,14 +33,14 @@
             1. 로그인 버튼을 누르게 되면 브라우저에서 각각의 input의 name값과 value값을 가져와서
             아래 패킷 데이터를 만듭니다.
 
-            GET /001.html?id=aaa&pw=bbb HTTP/1.1    #요청라인
+            GET /01caption.html?id=aaa&pw=bbb HTTP/1.1    #요청라인
             # ...여러 정보 생략...
             host: 나 자신
 
             2. 이 패킷을 host로 보내서 처리합니다.
 
             3. 그런데 처리해야 할 사람이 나 자신입니다. 그래서 나 자신에게
-            '001.html?id=aaa&pw=bbb'가 뜨게됩니다.
+            '01caption.html?id=aaa&pw=bbb'가 뜨게됩니다.
 
             GET 방식의 장점과 단점
             1. URL에 데이터가 노출되어 보안에 취약합니다.
