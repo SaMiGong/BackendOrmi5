@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'TvN-Font';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'basic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.a{
+    font-family: TvN-Font;
+    font-size: 36px;
+    color: #F5DF4D;
+    margin: 0px 717px 78px 717px;
+}
+
+.g{
+    margin: 78px 773px 102px 774px;
+    font-family: basic;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+span > strong{
+    font-family: basic;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+
+html{
+    background-color: #5B2386;
+}
+
+.background_clock{
+    position:absolute;
+    width: 261px;
+    height: 265px;
+    /*margin: 120px 829px 46px 830px;*/
+    top: 120px;
+    left: 830px;
+}
+
+.mTimelogo{
+    width: 564px;
+    height: 112px;
+    margin: 194px 678px 125px 678px;
+}
