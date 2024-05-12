@@ -10,26 +10,6 @@
     font-weight: normal;
     font-style: normal;
 }
-.a{
-    font-family: TvN-Font;
-    font-size: 36px;
-    color: #F5DF4D;
-    margin: 0px 717px 78px 717px;
-}
-
-.g{
-    margin: 78px 773px 102px 774px;
-    font-family: basic;
-    font-size: 18px;
-    color: #FFFFFF;
-}
-
-span > strong{
-    font-family: basic;
-    font-size: 24px;
-    color: #FFFFFF;
-}
-
 
 html{
     background-color: #5B2386;
@@ -48,4 +28,128 @@ html{
     width: 564px;
     height: 112px;
     margin: 194px 678px 125px 678px;
+}
+
+.head{
+    font-family: TvN-Font;
+    width: 490px;
+    height: 85px;
+    font-size: 36px;
+    color: #F5DF4D;
+    margin: 0px 717px 60px 717px;
+}
+
+.g{
+    margin: 78px 773px 102px 774px;
+    width: 380px;
+    height: 85px;
+    font-family: basic;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+span > strong{
+    font-family: basic;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.qu{
+    position: absolute;
+    left: 714px;
+    top: 600px;
+}
+
+.inputText{
+    font-family: basic;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 102px 577px 115px 578px;
+    width: 765px;
+    height: 141px;
+    text-align: center;
+    line-height: 80px; /*줄 간격*/
+}
+
+input[type="text"]{
+    width: 228px;
+    height: 57px;
+    border-radius: 10px; /*모서리 깍기*/
+    color: #BABCBE;
+    font-size: 24px;
+    text-align: center;
+    font-family: basic;
+}
+
+.output{
+    width: 565px;
+    height: 66px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    font-family: basic;
+    color: #5B2386;
+    background-color: #FCEE21;
+    margin: 0px 0px 147px 678px;
+}
+
+.hand{
+    position:absolute;
+    top: 1060px;
+    left: 1254px;
+}
+
+.outputText{
+    width: 700px;
+    weight: 100px;
+    font-size: 24px;
+    font-family: basic;
+    color: #FFFFFF;
+    margin: 0px 628px 127px 620px;
+    text-align: center;
+}
+
+.str{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.start{
+    width: 350px;
+    height: 66px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    font-family: basic;
+    color:#5B2386;
+    background-color: #FCEE21;
+    margin: 0px 18px 130px 678px;
+}
+
+.share{
+    width: 200px;
+    height: 66px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    font-family: basic;
+    color:#5B2386;
+    background-color: #FFFFFF;
+}
+
+.weniv_logo{
+    width: 125px;
+    height: 25px;
+    margin: 0px 898px 20px 897px;
+}
+
+.warning{
+    width: 410px;
+    height: 34px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0px 777px 70px 760px;
 }
