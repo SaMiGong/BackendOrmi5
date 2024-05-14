@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 출력: 200
+    var a = 100;
+    var a = 200;
+    // 출력: error
+    // let b = 100;
+    // let b = 200;
+
+    let b = 1000;
+    // const는 초기화를 무조건 해줘야함
+    // const c; //오답
+    const c = 1000; //정답
+
+    // 1번
+    function 안녕(파라미터){
+        console.log(파라미터);
+        console.log('hello');
+        return 100;
+    }
+
+    let 아규먼트 = 1000;
+    안녕(아규먼트);
+    console.log(안녕(아규먼트) + 안녕(아규먼트));
+</script>
+
+</body>
+</html>

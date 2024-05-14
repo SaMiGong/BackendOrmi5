@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'TvN-Font';
+    font-family: 'tvN-Font';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -19,7 +19,6 @@ html{
     position:absolute;
     width: 261px;
     height: 265px;
-    /*margin: 120px 829px 46px 830px;*/
     top: 120px;
     left: 830px;
 }
@@ -31,7 +30,7 @@ html{
 }
 
 .head{
-    font-family: TvN-Font;
+    font-family: tvN-Font;
     width: 490px;
     height: 85px;
     font-size: 36px;
@@ -49,7 +48,7 @@ html{
     color: #FFFFFF;
 }
 
-span > strong{
+.g strong{
     font-family: basic;
     font-size: 24px;
     color: #FFFFFF;
@@ -80,6 +79,16 @@ input[type="text"]{
     font-size: 24px;
     text-align: center;
     font-family: basic;
+}
+/*job, hour 스크린리더에선 읽게 사용자 눈에선 숨기기*/
+.hidden{
+    position: absolute; /*흐름제거, 절대위치 넣기*/
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    overflow: hidden;
 }
 
 .output{
