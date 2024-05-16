@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const arr = [10, 20, 30];
+  // push, pop, unshift, shift (앞에서 넣고, 빼기 - 뒤에서 넣고, 빼기)
+  arr.push(40); // 뒤에서 40 넣기
+  console.log(arr); // [10, 20, 30, 40]
+
+  arr.pop(); // 맨 뒤에 있는 값 빼기
+  console.log(arr); // [10, 20, 30]
+
+  arr.unshift(40); // 앞에서 40 넣기
+  console.log(arr); // [40, 10, 20, 30]
+
+  arr.shift(); // 맨 앞에 있는 값 빼기
+  console.log(arr); // [10, 20, 30]
+
+  // splice (추가 및 제거)
+  arr.splice(0, 2, 3); // (인덱스 몇부터, 뺄 갯수, 빼고 넣을 값)
+  console.log(arr); // [3, 30]
+  arr.splice(0, 1, 10, 20); // (인덱스 0부터, 1개를 빼, 10, 20 값을 추가해줘)
+  console.log(arr); // [10, 20, 30]
+
+  // slice (추출하기)
+  arr.push(40, 50, 60); // 숫자 길이 늘리기
+  console.log(arr); // [10, 20, 30, 40, 50, 60]
+  const array = arr.slice(1, 4); // index 1부터 4이전까지 추출 후 arr2로 보냄.
+  console.log(arr); // [10, 50, 60]
+  console.log(array); // [20, 30, 40]
+
+  // sort (정리하기)
+  const nums = [1, 11, 3, 22, 2, 33];
+  console.log(nums.sort((a, b) => a - b)); // 오름차순 a,b a,b
+  console.log(nums.sort((a, b) => b - a)); // 내림차순 a,b b,a
+
+  // fotEach (배열의 각 요소에 주어진 함수 실행)
+  const arr = ['참외', '키위', '감귤'];
+  arr.forEach(function(item, index) { // arr의 각 요소에서 함수 실행
+      console.log(item, index); // 현재 요소(item), 요소의 값(index) 콘솔에 출력
+      arr[index] = index; // arr의 배열 값을 index 값으로 바꿈
+      console.log(arr); // [0, 1, 2]
+  });
+
+  // map (배열의 값을 변환할 때 유용하게 사용됨. 원본 배열은 변경되지 않고, 새로운 배열 생성)
+  const arr = [10, 20, 30];
+  const newArr = arr.map(function(item, index) { // arr의 각 요소에서 함수 실행
+      return item * index; // 위의 arr.map 에서 전달한 item과 index 함수 곱하기
+                            // item(10, 20, 30) * index(0, 1, 2)
+  });
+
+  console.log(newArr);
+
+  // filter (필터)
+  const arr11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const newArr = arr11.filter(el => el % 2 === 0); // 2로 나눠서 나머지 0이 되는 수(짝수) 검사
+                                        // 검사 후 true만 newArr에 넣음
+  console.log(newArr);
+
+  // includes (index 중에 내가 말하는게 있나~?)
+  const arr = ['hello', 'world', 'hojun']
+  arr.includes('world') // true
+
+  const arr = ['hello', 'world', 'hojun']
+  arr.includes('leehojun') // false
+
+  const arr = ['hello', 'world', 'hojun']
+  arr.includes('jun') // false
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 원시타입 (Primitive Types)
+    // (string, number, bigint, boolean, undefined, symbol, null)
+    let str1 = 'hello';
+    let str2 = str1;
+    console.log(str2); // 'hello'
+
+    str1 = 'world';
+    console.log(str2); // str2에 할당된 값은 여전히 'hello' 입니다.
+
+    //객체 타입 (Object Types)
+    const myarr = [1, 2, 3, 4, 5];
+    const myarr2 = myarr;
+    console.log(myarr, myarr2); // 현재:  [1, 2, 3, 4, 5]
+    myarr.push(11);
+    console.log(myarr, myarr2); // 둘 다 추가된다.[1, 2, 3, 4, 5, 11]
+
+
+
+</script>
+</body>
+</html>
