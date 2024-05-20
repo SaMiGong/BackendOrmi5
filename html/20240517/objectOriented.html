@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // const me = {
+    //     name: '문석준',
+    //     address: '부산',
+    //     phoneNum: '010-1234-1234',
+    //     canWalk: function () {
+    //         console.log('석준 걷는다');
+    //     },
+    //     playGame: function (game) {
+    //         game.levelUp();
+    //     }
+    // }
+    //
+    // const lol = {
+    //     level: 1,
+    //     levelUp: function () {
+    //         this.level++;
+    //     }
+    // }
+    //
+    // me.playGame(lol); // 이게 실행 될 때마다 레벨이 하나씩 오름
+    // lol // 레벨 확인
+
+
+    function Me(){
+        this.name = '문석준';
+        this.address = '부산';
+        this.phoneNum = '010-1234-1234';
+    }
+
+    Me.prototype.canWalk = function () {
+        console.log('석준 걷는다');
+    }
+    Me.prototype.playGame = function (game) {
+        game.levelUp();
+    };
+
+    function Lol(){
+        this.level = 1;
+    }
+
+    Lol.prototype.levelUp = function (){
+        this.level++;
+    }
+
+
+    class Gamep {
+        constructor(name) {
+            this.name = name;
+        }
+
+        sayYourGame() {
+            console.log(`나랑 같이 ${this.name}할래?`)
+        }
+    }
+
+
+    class Me{
+        constructor() {
+            this.name = '한재현';
+            this.address = '제주도 제주시 인다 1길';
+            this.phoneNum = '010-8000-0000';
+        }
+
+        canWalk(){
+            console.log('재현이가 걷는다.');
+        }
+
+        teaching(student){
+            student.levelUp();
+        }
+    }
+
+    class Ormi{
+        constructor() {
+            this.level = 1;
+        }
+
+        levelUp(){
+            this.level++;
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const babaYaga = {
+        name: "John Wick",
+        age: 53,
+        from: "벨라루스",
+        askingHim: function(){
+            console.log("Yeah, I'm thinking I'm back!");
+        }
+    };
+    babaYaga.askingHim();
+    // 실행 시 babaYaga 안의 askingHim를 실행시켜
+    // Yeah, I'm thinking I'm back! 이 출력되게 한다.
+
+    console.log(`${babaYaga.name} from ${babaYaga.from}`);
+    // 똑같이 John Wick from 벨라투스 라고 출력됨 (name, from)
+    console.log(`${babaYaga['name']} from ${babaYaga['from']}`);
+
+    
+
+</script>
+
+</body>
+</html>
