@@ -1,0 +1,130 @@
+* {
+    padding: 0px;
+    margin: 0px; /* 모든 것의 패딩과 마진 값 0으로 설정 */
+    font-family: Pretendard-Regular;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top_nav {
+    display: flex;
+}
+header {
+    width: 1920px; /* 크기 조절 */
+    height: 900px; /* 크기 조절 */
+    background-color: #F2E9D8; /* 바탕색 설정 */
+}
+.logo {
+    margin: 31px 756px 231px 320px; /* 로고 위치 조정 */
+    width: 130px; /* 로고 사이즈 조정 */
+    height: 40px; /* 로고 사이즈 조정 */
+}
+.menu {
+    display: flex;
+    margin: 41px 49px 73px 0px; /* 위치 조정 */
+    gap: 30px; /* 메뉴 사이 공백 */
+}
+nav ul{
+    list-style-type: none; /* 앞에 붙는 점 없애기 */
+    display: flex;
+    gap: 30px; /* 메뉴 사이 공백 */
+}
+nav li{
+    display: inline-block; /* 열 방식에서 행 방식으로 바꿈 */
+}
+nav a {
+    text-decoration: none; /* 텍스트 밑줄 제거 */
+    color: #333; /* 글자 색 */
+    font-size: 16px; /* 폰트 사이즈 */
+}
+.download_one{
+    width: 140px; /* 박스 사이즈 조절 */
+    height: 50px; /* 박스 사이즈 조절 */
+    border-radius: 40px; /* 박스 모서리 둥글게 */
+    border-width: 0px; /* 박스 테두리 두께 */
+    font-size: 16px; /* 폰트 사이즈 */
+    padding: 10px 35px; /* 글자와 박스 공간 조절 */
+    margin: 26px 320px 58px 0px; /* 위치 조정 */
+    background-color: #D97652; /* 박스 바탕색 설정 */
+    color: #FFFFFF; /* 글자 색 설정 */
+}
+
+
+header h2 {
+    font-size: 48px;
+    margin: 0px 170px 40px 320px;
+}
+header h4 {
+    font-size: 16px;
+    margin: 40px 445px 40px 320px;
+}
+.download_two {
+    width: 140px; /* 박스 사이즈 조절 */
+    height: 50px; /* 박스 사이즈 조절 */
+    border-radius: 40px; /* 박스 모서리 둥글게 */
+    border-width: 0px; /* 박스 테두리 두께 */
+    font-size: 16px; /* 폰트 사이즈 */
+    padding: 10px 35px; /* 글자와 박스 공간 조절 */
+    margin: 40px 725px 0px 320px; /* 위치 조정 */
+    background-color: #D97652; /* 박스 바탕색 설정 */
+    color: #FFFFFF; /* 글자 색 설정 */
+}
+.boxCat {
+    width: 415px;
+    height: 766px; /* 사진 크기 조절 */
+    position: absolute;
+    top: 134px; /* 위에서부터 px만큼 떨어짐 */
+}
+
+
+main > div{
+    display: flex;
+}
+.bedCat {
+    width: 660px;
+    height: 390px;
+    position: relative;
+    top: 80px;
+    left: 320px;
+}
+.column{
+    position: static;
+}
+.column > h3 {
+    width: 510px;
+    height: 135px;
+    font-size: 36px;
+    margin: 172px 200px 30px 420px;
+}
+.column > h4{
+    width: 510px;
+    height: 40px;
+    font-size: 16px;
+    margin: 30px 320px 213px 420px;
+}
+main > h2 {
+    width: 875px;
+    height: 60px;
+    font-size: 48px;
+    color: #D97652;
+    margin: 0px 522px 40px 523px;
+}
+h4 > span {
+    color: #D97652;
+}
+
+main > h4 {
+    width: 710px;
+    height: 42px;
+    font-size: 16px;
+    margin: 0px 605px 88px 605px;
+    text-align: center;
+}
+
+footer {
+
+}
