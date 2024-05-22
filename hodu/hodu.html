@@ -43,9 +43,61 @@
     <h4>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</h4>
 
-</main>
-<footer>
+    <div class="img_row">
+        <li><img src="img_1.png" alt=""></li>
+        <li><img src="img_2.png" alt=""></li>
+        <li><img src="img_3.png" alt=""></li>
+        <li><img src="img_1%20(1).png" alt=""></li>
+        <li><img src="img_2%20(1).png" alt=""></li>
+        <li><img src="img_3%20(1).png" alt=""></li>
+    </div>
 
+    <p>Continue exploring HODU</p>
+    <button class="show_more">show more</button>
+    <hr>
+
+    <div class="map_text">
+        <h2>Where you'll be</h2>
+        <h4>330, cheomden-ro, Jeju-si, Jeju-do, Republic of Korea</h4>
+    </div>
+
+    <div id="map" style="width: 1278px; height: 520px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d6bf6ef18646f75711da1cd8c4365a08"></script>
+    <script type="text/javascript">
+        const container = document.getElementById('map');
+        let options = {
+            center: new kakao.maps.LatLng(33.442237, 126.571474),
+            level: 2
+        };
+        let map = new kakao.maps.Map(container, options);
+    </script>
+
+    <div class="mail">
+        <h2>Subscribe to our Blog post</h2>
+        <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+            Lorem Ipsum has been the industry's standard dummy text </h4>
+        <article>
+            <img src="mail.png" alt="">
+            <input type="text" name="" class="inpMail" value="" placeholder="Enter your e-mail address">
+            <button>Subscribe</button>
+        </article>
+    </div>
+    <img src="img_5%20(1).png" alt="backgroundCat" class="backgroundCat">
+</main>
+
+<aside>
+    <a href=""><img src="scroll-top-btn%20(1).png" alt="tpTop" class="rollUp"></a>
+</aside>
+<footer>
+    <img src="Logo-fin.svg" alt="hodu logo">
+    <nav class="sns">
+        <ul>
+            <li><a href=""><img src="icon-blog.png" alt="blog"></a></li>
+            <li><a href=""><img src="icon-insta.png" alt="instar"></a></li>
+            <li><a href=""><img src="icon-facebook.png" alt="facebook"></a></li>
+            <li><a href=""><img src="icon-youtube.png" alt="youtube"></a></li>
+        </ul>
+    </nav>
 </footer>
 <script src="hodu.js"></script>
 </body>
