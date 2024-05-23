@@ -8,14 +8,19 @@ const imgMore = document.getElementById('more_img');
 const showMore = document.getElementById('show_more');
 const imgAddNum = 6;
 
-showMore.addEventListener('click', () => {
+console.log('Before addEventListener');
+
+showMore.addEventListener('click', async function() {
+
+    console.log('Button clicked');
+
     if (imgMore.style.display === 'none') {
         imgMore.style.display = 'block';
         showMore.textContent = 'Show Less';
 
         // Picsum Photos 에서 이미지 가져오기
         for (let i = 0; i < imgAddNum; i++) {
-            const response = await fatch(`https://picsum.photos/id/${Math.floor(Math.random() * 1000)}/500/300`);
+            const response = await fatch(`https://picsum.photos/id/${randomId}/500/300`);
             const blob = await response.blob();
             const imageUrl = URL.createObjectURL(blob);
             const img = document.createElement('img');
@@ -30,3 +35,4 @@ showMore.addEventListener('click', () => {
         imgMore.innerHTML = '';
     }
 });
+console.log('After addEventListener');
