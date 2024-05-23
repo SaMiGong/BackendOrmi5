@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<article class="parent">
+    <ol>
+        <li><button class="btn-first" type="button">버튼1</button></li>
+        <li><button type="button">버튼2</button></li>
+        <li><button type="button">버튼3</button></li>
+    </ol>
+</article>
+<script>
+    const btnFirst = document.querySelector('.btn-first');
+    btnFirst.addEventListener('click', (event) => {
+        console.log(event);
+    });
+</script>
 </body>
 </html>

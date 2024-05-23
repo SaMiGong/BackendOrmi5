@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div
+        class="terran battle-cruiser"
+        data-ship-id="324"
+        data-weapons="laser"
+        data-health="400"
+        data-mana="250"
+        data-skill="yamato-cannon"
+        >
+</div>
+<script>
+    const img = document.querySelector('img')
+    console.log(img.dataset);
+    console.log(img.dataset.shipId);
+</script>
 </body>
 </html>

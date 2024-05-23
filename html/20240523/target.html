@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<article class="parent">
+    <ol>
+        <li><button class="btn-first" type="button">버튼1</button></li>
+        <li><button type="button">버튼2</button></li>
+        <li><button type="button">버튼3</button></li>
+    </ol>
+</article>
+
+<script>
+    // // 이벤트 위임
+    const parent = document.querySelector('.parent');
+    // parent.addEventListener('click', function (event) {
+    //     console.log(event.target);
+    //     if (event.target.nodeName === "BUTTON") {
+    //         event.target.textContent = "버튼4";
+    //     }
+    // })
+
+    // 이벤트 this
+    const myObj = {
+        name: 'jaehyun',
+        walk() {
+            parent.addEventListener('click', () => {
+                console.log(this.name + ' is walking');
+            })
+        }
+    }
+    myObj.walk();
+
+    // 이벤트 target, currentTarget
+    // const parent = document.querySelector('.parent');
+    // parent.addEventListener('click', function (event) {
+    //     console.log(event.target);
+    //     console.log(event.currentTarget);
+    // })
+</script>
+
 </body>
 </html>
