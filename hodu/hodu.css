@@ -130,12 +130,17 @@ main > h4 {
     gap: 72px;
     margin: 0px 0px 100px 320px;
 }
-.more_img {
+.more_img{
     display: grid;
     list-style-type: none; /* 앞에 붙는 점 없애기 */
     grid-template-columns: 378px 378px 378px;
     gap: 72px;
     margin: 0px 0px 100px 320px;
+}
+.img-width img {
+    max-width: 438px;
+    height: 438px;
+    border-radius: 30px;
 }
 main > p{
     width: 290px;
@@ -185,13 +190,13 @@ main > hr {
     height: 520px;
     margin: 0px 322px 80px 320px;
 }
-.mail{
-    position: relative;
-    width: 1278px; /* 박스 사이즈 조절 */
+.mail {
+    position: absolute;
+    display: flex;
+    width: 1280px; /* 박스 사이즈 조절 */
     height: 200px; /* 박스 사이즈 조절 */
     border-radius: 30px; /* 박스 모서리 둥글게 */
     border-width: 0px; /* 박스 테두리 두께 */
-    padding: 10px 35px; /* 글자와 박스 공간 조절 */
     margin: 0px 320px 240px 320px; /* 위치 조정 */
     flex-direction: column; /* 텍스트 열 방식으로 바꾸기 */
     background-color: #263140; /* 박스 바탕색 설정 */
@@ -211,6 +216,7 @@ main > hr {
     margin: 0px 163px 51px 58px;
 }
 .mail > article{
+    display: block;
     position: absolute;
     width: 530px;
     height: 60px;
@@ -245,12 +251,11 @@ article > button {
     font-size: 16px;
 }
 .backgroundCat{
-    position: absolute;
+    display: flex;
     width: 1920px;
     height: 340px;
-    top: 3819px;
-    z-index: 1;
-    margin: 65px 0px 45px 0px;
+    margin: 101px 0px 0px 0px;
+    z-index: -1;
 }
 
 .rollUp{
