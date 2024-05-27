@@ -250,12 +250,95 @@ article > button {
     color: #FFFFFF; /* 글자 색 설정 */
     font-size: 16px;
 }
+article > button:hover{
+    opacity: 0.5;
+}
 .backgroundCat{
     display: flex;
     width: 1920px;
     height: 340px;
     margin: 101px 0px 0px 0px;
     z-index: -1;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+
+    /* 숨기기 */
+    z-index: -1;
+    opacity: 0;
+}
+.backgroundImg{
+    position: relative;
+    display: flex;
+    width: 600px;
+    height: 400px;
+    border-radius: 40px;
+    z-index: -1;
+}
+.show {
+    opacity: 1;
+    z-index: 1000;
+    transition: all .5s;
+}
+
+.window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 초기에 약간 아래에 배치 */
+    transform: translate(-50%, -40%);
+}
+.show .popup {
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+.catHead {
+    position: absolute;
+    width: 110px;
+    height: 112px;
+    margin: 60px 245px 24px 245px;
+}
+.popup > h2 {
+    position: absolute;
+    font-size: 36px;
+    color: #D97652;
+    width: 212px;
+    height: 46px;
+    margin: 196px 194px 12px 204px;
+}
+.popup > h4 {
+    position: absolute;
+    font-size: 14px;
+    width: 365px;
+    height: 18px;
+    margin: 254px 127px 0px 118px;
+}
+#close {
+    position: absolute;
+    width: 183px; /* 박스 사이즈 조절 */
+    height: 50px; /* 박스 사이즈 조절 */
+    border-radius: 40px; /* 박스 모서리 둥글게 */
+    border-width: 0px; /* 박스 테두리 두께 */
+    font-size: 16px; /* 폰트 사이즈 */
+    gap: 10px; /* 글자와 박스 공간 조절 */
+    margin: 310px 212px 40px 205px; /* 위치 조정 */
+    background-color: #D97652; /* 박스 바탕색 설정 */
+    color: #FFFFFF; /* 글자 색 설정 */
 }
 
 .rollUp{
@@ -267,7 +350,7 @@ article > button {
 }
 .rollUp:hover{
     opacity: 1;
-}
+    }
 
 footer {
     display: flex;
